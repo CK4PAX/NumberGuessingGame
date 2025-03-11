@@ -1,0 +1,4 @@
+/target/
+/nbproject/
+*.json
+*.json.swp
