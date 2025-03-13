@@ -10,10 +10,23 @@ public class SettingsTest {
     }
 
     @Test
-    public void testSetChances() {
+    public void testSetAttempsMedium() {
         String opt = "2";
-        settings.setChances(opt);
-        assertEquals(5, settings.getChances());
+        settings.setAttemps(opt);
+        assertEquals(5, settings.getAttemps());
     }
     
+    @Test
+    public void testSetAttempsEasy() {
+        String opt = "1";
+        settings.setAttemps(opt);
+        assertEquals(10, settings.getAttemps());
+    }
+    
+    @Test
+    public void testSetAttempsHard() {
+        String opt = "3";
+        settings.setAttemps(opt);
+        assertEquals(3, settings.getAttemps());
+    }
 }

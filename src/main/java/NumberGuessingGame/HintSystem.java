@@ -29,26 +29,26 @@ public class HintSystem {
 
         if(quantity != 1){
             int ranIndx = getRan(1, quantity) - 1;
-            System.out.println(Messages.showMultiple(multiples.get(ranIndx)));
+            Messages.showMultiple(multiples.get(ranIndx));
         }
         else{
-            System.out.println(Messages.isPrimeNumber());
+            Messages.isPrimeNumber();
         }
     }
     
     public static int provideRange(int ran){
         if(ran < 5){
-            System.out.println(Messages.showRange(1, 5));
+            Messages.showRange(1, 5);
             return 1;
         }
         if(ran >95){
-            System.out.println(Messages.showRange(95, 100));
+            Messages.showRange(95, 100);
             return 2;
         }
         int indx = getRan(1, 5) - 1;
         int min = ran - indx;
         int max = ran + (4 - indx);
-        System.out.println(Messages.showRange(min, max));
+        Messages.showRange(min, max);
         return 0;
     }
 }

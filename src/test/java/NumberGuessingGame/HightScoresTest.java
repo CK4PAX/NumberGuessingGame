@@ -10,11 +10,6 @@ public class HightScoresTest {
     
     public HightScoresTest() {
     }
-
-    /*@Test
-    public void testInit() {
-        assertDoesNotThrow(()->{hs.init();});
-    }*/
     
     @Test
     public void testFindPlace(){

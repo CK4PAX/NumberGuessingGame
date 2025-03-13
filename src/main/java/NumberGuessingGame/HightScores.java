@@ -44,8 +44,9 @@ public class HightScores {
                     seconds +"s";
             System.out.println(row);
         }
-        System.out.println();
+        System.out.println("-".repeat(columns.length()));;
     }
+    
     public void setPlace(int place, int attemps, float seconds){
         JSONObject applicant = new JSONObject();
         applicant.put("attemps", attemps);
@@ -59,7 +60,7 @@ public class HightScores {
         int length = hscores.length();
         if(length == 0)
             return 0;
-        //{2,4,6,3,1,5}
+
         for (int i = length - 1; i >= 0; i--) {
             JSONObject score = hscores.getJSONObject(i);
             int storedAttemps = score.getInt("attemps");

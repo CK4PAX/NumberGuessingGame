@@ -1,17 +1,18 @@
 package NumberGuessingGame;
 
 public class Settings {
-    int chances;
+    private int attemps;
 
-    public int getChances() {
-        return chances;
+    public int getAttemps() {
+        return attemps;
     }
 
-    public void setChances(String opt) {
+    public void setAttemps(String opt) {
         switch (opt) {
-            case "1" -> chances = 10;
-            case "2" -> chances = 5;
-            case "3" -> chances = 3;
+            case "1" -> attemps = 10;
+            case "2" -> attemps = 5;
+            case "3" -> attemps = 3;
         }
     }
+  
 }
